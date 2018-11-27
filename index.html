@@ -5,16 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
 <body>
-    <div id="game">
-        <h1>Hangman</h1>
-        <h2>Press any key to get started</h2>
-        <p>Wins: <span id="wins">0</span></p>
-        <p># of guesses remaining: <span id="guesses">12</span></p>
-        <p>Letters already guessed: <span id="user-choices"></span></p>
-        <p>Current Word: <span id="answer"></span></p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                    <img src="assets/images/nba-logo.png" class="img-fluid rounded mx-auto d-block">
+            </div>
+            <div class="col-md-9 border border-info rounded">
+                <div id="game">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <h1>Hangman</h1>
+                            <h5>PRESS ANY KEY TO GET STARTED</h5>
+                            <hr>
+                        </div>        
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                                <img alt="" src="" class="img-fluid" id="picture"/>
+                        </div>
+                        <div class="col-md-6">
+                            <p>WINS</p>
+                            <p><span id="wins">0</span></p>
+                            <p># OF GUESSES REMAINING</p>
+                            <p></p><span id="guesses">12</span></p>
+                            <p>CURRENT WORD</p>   
+                            <P><span id="answer"></span></P>    
+                            <p>LETTERS ALEADY GUESSED</p>
+                            <p><span id="user-choices"></span></P>  
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>    
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
